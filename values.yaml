@@ -1,0 +1,26 @@
+akhq:
+  secrets:
+    akhq:
+      connections:
+        docker-kafka-server:
+          properties:
+            bootstrap.servers: "kafka-dev-cp-kafka:9092"
+          schema-registry:
+            url: "http://kafka-dev-cp-schema-registry:8081"
+          connect:
+            - name: "connect"
+              url: "http://kafka-dev-cp-kafka-connect:8083"
+
+cp-helm-charts:
+  cp-zookeeper:
+    servers: 1
+  cp-kafka:
+    brokers: 1
+  cp-kafka-rest:
+    enabled: false
+  cp-kafka-connect:
+    enabled: true
+  cp-ksql-server:
+    enabled: false
+  cp-control-center:
+    enabled: false

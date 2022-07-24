@@ -1,0 +1,9 @@
+dependencies:
+- name: cp-helm-charts
+  repository: https://confluentinc.github.io/cp-helm-charts/
+  version: 0.6.1
+- name: akhq
+  repository: https://akhq.io/
+  version: 0.2.8
+digest: sha256:7f8b10ce66faee1bbb729d133ec2092ddee02a9a23db9684b6cfbe060c6c9e8e
+generated: "2022-07-24T10:35:42.194640337+02:00"
